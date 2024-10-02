@@ -1,0 +1,4 @@
+Daily: Homepage, Blog
+Weekly: Services, Careers
+Monthly: Contact, Case Studies, FAQ, About, Team, Sitemap
+Yearly: Privacy Policy, Terms and Conditions

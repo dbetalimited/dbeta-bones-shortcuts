@@ -1,0 +1,6 @@
+Homepage: 1.0
+Service Pages: 0.8 - 0.9
+Contact, Case Studies, About: 0.8
+Blog, FAQ, Careers: 0.7
+Team, Privacy, Terms: 0.5 - 0.6
+Sitemap: 0.4
