@@ -94,6 +94,7 @@ echo '' . ($htmlAttributesImageCoding ? 'width="118" height="101" alt="Flytende 
               </li>
             <?php endif; ?>
 
+           <div class="g-recaptcha mb-3" data-sitekey="<?= h($data['recaptcha_sitekey'] ?? '') ?>"></div>
 
 // general links
 <?php if($htaccess["live"] == "0"){?>
