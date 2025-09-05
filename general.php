@@ -73,7 +73,26 @@ echo '' . ($htmlAttributesImageCoding ? 'width="118" height="101" alt="Flytende 
 <a href = "tel:<?php echo $data["contactDetails"]["telephone"]; ?>"><?php echo $data["contactDetails"]["telephone"]; ?></a>
 
 
-
+            <?php if ($phone): ?>
+              <li><strong>Phone:</strong> <a href="tel:<?= h($phone) ?>"><?= h($phone) ?></a></li>
+            <?php endif; ?>
+            <?php if ($email): ?>
+              <li><strong>Email:</strong> <a href="mailto:<?= h($email) ?>"><?= h($email) ?></a></li>
+            <?php endif; ?>
+            <?php if ($address): ?>
+              <li>
+                <strong>Address:</strong>
+                <?php
+                  if (function_exists('displayAddress')) {
+                    echo displayAddress($data, 'rel="noopener" target="_blank"');
+                  } else {
+                    echo $mapHref
+                      ? '<a href="'.h($mapHref).'" target="_blank" rel="noopener">'.h($address).'</a>'
+                      : h($address);
+                  }
+                ?>
+              </li>
+            <?php endif; ?>
 
 
 // general links
